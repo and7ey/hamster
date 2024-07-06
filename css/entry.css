@@ -5911,9 +5911,10 @@ ul {
 }
 
 .bottom-sheet {
+    display: none;
     align-items: flex-end;
     bottom: 0;
-    display: flex;
+/*    display: flex;*/
     justify-content: center;
     left: 0;
     min-width: 320px;
