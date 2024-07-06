@@ -22,7 +22,7 @@
       		if (cardInfo) {
       			element.textContent = `lvl ${currentLevel}`;
       
-              	element.closest('.upgrade-item').querySelector('.profit-value.placeholder').textContent = cardInfo.profitPerHour;
+              	// element.closest('.upgrade-item').querySelector('.profit-value.placeholder').textContent = cardInfo.profitPerHour;
               	element.closest('.upgrade-item').querySelector('.addl-profit-value.placeholder').textContent = cardInfo.profitPerHourDelta;
               	element.closest('.upgrade-item').querySelector('.upgrade-price-value.placeholder').textContent = cardInfo.price;
               	element.closest('.upgrade-item').querySelector('.price-profit-ratio-value.placeholder').textContent = cardInfo.profitPercentage + '%';
@@ -51,7 +51,7 @@
       
               const cardInfo = cardData.find(item => item.name === cardTitle && item.level === currentLevel);
               if (cardInfo) {
-              	cardElement.querySelector('.profit-value.placeholder').textContent = cardInfo.profitPerHour;
+              	// cardElement.querySelector('.profit-value.placeholder').textContent = cardInfo.profitPerHour;
               	cardElement.querySelector('.addl-profit-value.placeholder').textContent = cardInfo.profitPerHourDelta;
               	cardElement.querySelector('.upgrade-price-value.placeholder').textContent = cardInfo.price;
               	cardElement.querySelector('.price-profit-ratio-value.placeholder').textContent = cardInfo.profitPercentage + '%';
@@ -67,7 +67,7 @@
           	currentLevel = getLevelFromLocalStorage(cardTitle);
           	const cardInfo = cardData.find(item => item.name === cardTitle && item.level === currentLevel);
           	if (cardInfo) {
-              	cardElement.querySelector('.profit-value.placeholder').textContent = cardInfo.profitPerHour;
+              	// cardElement.querySelector('.profit-value.placeholder').textContent = cardInfo.profitPerHour;
               	cardElement.querySelector('.addl-profit-value.placeholder').textContent = cardInfo.profitPerHourDelta;
               	cardElement.querySelector('.upgrade-price-value.placeholder').textContent = cardInfo.price;
               	cardElement.querySelector('.price-profit-ratio-value.placeholder').textContent = cardInfo.profitPercentage + '%';
@@ -211,21 +211,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">CEO</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -260,21 +260,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Marketing</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -309,21 +309,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">IT team</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -358,21 +358,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Support team</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -421,21 +421,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">HamsterBook</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -470,21 +470,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">HamsterTube</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -527,21 +527,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">X</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -585,21 +585,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Cointelegraph</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -665,21 +665,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">HamsterGram</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -724,21 +724,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">TikTok</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -784,21 +784,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Сoindesk</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -847,21 +847,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Influencers</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -921,21 +921,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Partnership program</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -993,21 +993,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Product team</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -1070,21 +1070,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">BisDev team</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -1134,21 +1134,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title is-long">Two factor authentication</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -1183,21 +1183,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">UX and UI team</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -1232,21 +1232,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Security team</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -1281,21 +1281,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">QA team</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -1330,21 +1330,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Antihacking shield</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -1379,21 +1379,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Risk management team</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -1428,21 +1428,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Security Audition</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -1477,21 +1477,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title is-long">Anonymous transactions ban</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -1526,21 +1526,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title is-long">Blocking suspicious accounts</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -1575,21 +1575,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Tokenomics expert</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -1624,21 +1624,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title is-long">Consensus Explorer pass</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -1673,21 +1673,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">VC Labs</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -1722,21 +1722,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Compliance officer</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -1771,21 +1771,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Welcome to Amsterdam</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -1820,21 +1820,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title is-long">Development Hub Mumbai</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -1880,21 +1880,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Fan tokens</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -1951,21 +1951,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Staking</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -2028,21 +2028,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">BTC pairs</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -2095,21 +2095,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">ETH pairs</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -2152,21 +2152,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Top 10 cmc pairs</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -2206,21 +2206,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">GameFi tokens</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -2282,21 +2282,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Defi2.0 tokens</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -2354,21 +2354,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">SocialFi tokens</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -2403,21 +2403,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Meme coins</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -2493,21 +2493,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Shit coins</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -2543,21 +2543,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Margin trading x10</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -2593,21 +2593,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Margin trading x20</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -2643,21 +2643,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Margin trading x30</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -2693,21 +2693,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Margin trading x50</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -2743,21 +2743,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Margin trading x75</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -2793,21 +2793,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Margin trading x100</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -2873,21 +2873,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Derivatives</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -2968,21 +2968,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Prediction markets</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -3033,21 +3033,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Web3 integration</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -3082,21 +3082,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">DAO</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -3131,21 +3131,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">P2P trading</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -3180,21 +3180,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Trading bots</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -3229,21 +3229,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">LayerZero Listing</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -3306,21 +3306,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">KYC</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -3377,21 +3377,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">KYB</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -3442,21 +3442,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Legal opinion</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -3491,21 +3491,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">SEC transparancy</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -3556,21 +3556,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title is-long">Anti money loundering</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -3605,21 +3605,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Licence UAE</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -3654,21 +3654,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Licence Europe</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -3703,21 +3703,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Licence Asia</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -3752,21 +3752,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title is-long">Licence South America</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -3801,21 +3801,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Licence Australia</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -3850,21 +3850,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title is-long">Licence North America</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -3899,21 +3899,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Licence Nigeria</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -3948,21 +3948,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Licence Japan</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -3997,21 +3997,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Licence Ethiopia</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -4046,21 +4046,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Licence India</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -4095,21 +4095,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Licence Bangladesh</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -4144,21 +4144,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Licence Indonesia</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -4193,21 +4193,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Licence Vietnam</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -4242,21 +4242,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Licence Turkey</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -4291,21 +4291,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Licence Philippines</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -4344,21 +4344,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Hamsters break records</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -4387,21 +4387,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Web3 Game Con</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -4430,21 +4430,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">X Network 10 Million</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -4473,21 +4473,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Hamster Green energy</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -4516,21 +4516,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">YouTube 25 Million</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -4559,21 +4559,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">TG Leaders</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -4602,21 +4602,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Hamster Kombat merch</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -4645,21 +4645,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">TON + Hamster Kombat = Success</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -4688,21 +4688,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Consensus Piranha Pass</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -4731,21 +4731,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Web3 academy launch</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -4774,21 +4774,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">YouTube Gold Button</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -4817,21 +4817,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Hamster YouTube Channel</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -4860,21 +4860,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Bitcoin Pizza Day</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -4903,21 +4903,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Top 10 Global Ranking</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -4946,21 +4946,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Special Hamster Conference</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
@@ -4989,21 +4989,21 @@
                       <div class="upgrade-item-info">
                         <div class="upgrade-item-title">Apps Center Listing</div>
                         <div class="upgrade-item-profit">
-                          <div class="upgrade-buy-stats-info">
+<!--                           <div class="upgrade-buy-stats-info">
                             <div class="price">
                               <div class="text-grey">Current profit per hour:&nbsp;</div>
                               <div class="profit-value placeholder"></div>
                             </div>
                           </div>
-                          <div class="upgrade-buy-stats-info">
+ -->                          <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Additional profit after upgrade:&nbsp;</div>
+                              <div class="text-grey">Profit:&nbsp;</div>
                               <div class="addl-profit-value placeholder"></div>
                             </div>
                           </div>
                           <div class="upgrade-buy-stats-info">
                             <div class="price">
-                              <div class="text-grey">Upgrade price:&nbsp;</div>
+                              <div class="text-grey">Price:&nbsp;</div>
                               <div class="upgrade-price-value placeholder"></div>
                             </div>
                           </div>
