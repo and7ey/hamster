@@ -38,20 +38,29 @@
 		<noscript><div><img src="https://mc.yandex.ru/watch/97765700" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 		<!-- /Yandex.Metrika counter -->		
         <script src="output.js"></script>
+        <script src="data.js"></script>
         <script>
             window.addEventListener('DOMContentLoaded', () => {
                 // Assuming the initial levels are stored in local storage
             	document.querySelectorAll('.upgrade-item .upgrade-item-level span').forEach(element => {
             		const cardTitle = element.closest('.upgrade-item').querySelector('.upgrade-item-title').textContent.trim();
             		var currentLevel = getLevelFromLocalStorage(cardTitle);
-            		const cardInfo = cardData.find(item => item.name === cardTitle && item.level === currentLevel);
+            		const cardInfo = priceData.find(item => item.name === cardTitle); //  && item.level === currentLevel
             		if (cardInfo) {
             			element.textContent = `lvl ${currentLevel}`;
-            
+            			console.log(cardInfo.profit);
+            			console.log(cardInfo.price);
                     	// element.closest('.upgrade-item').querySelector('.profit-value.placeholder').textContent = cardInfo.profitPerHour;
-                    	element.closest('.upgrade-item').querySelector('.addl-profit-value.placeholder').textContent = cardInfo.profitPerHourDelta;
-                    	element.closest('.upgrade-item').querySelector('.upgrade-price-value.placeholder').textContent = cardInfo.price;
-                    	element.closest('.upgrade-item').querySelector('.price-profit-ratio-value.placeholder').textContent = cardInfo.profitPercentage + '%';
+                    	// if (currentLevel == 0) {
+                    	// 	var profitValue = cardInfo.profit;
+                    	// 	var priceValue = cardInfo.price;
+                    	// } else {
+                    		var profitValue = cardInfo.profit * (1.07**currentLevel);
+                    		var priceValue = cardInfo.price * 1.02469507656536 ** (currentLevel**2 + 3*currentLevel);
+                		// }
+                    	element.closest('.upgrade-item').querySelector('.addl-profit-value.placeholder').textContent = Math.round(profitValue);
+                    	element.closest('.upgrade-item').querySelector('.upgrade-price-value.placeholder').textContent = Math.round(priceValue);
+                    	element.closest('.upgrade-item').querySelector('.price-profit-ratio-value.placeholder').textContent = Math.round(profitValue / priceValue * 100 * 10) / 10 + '%';
             
             		}
             
@@ -95,18 +104,21 @@
             
             	if (action === 'plus' || action === 'minus') {
             		if (action === 'plus') {
-                        currentLevel = Math.min(currentLevel + 1, 20); // Increment but not beyond 20
+                        currentLevel = Math.min(currentLevel + 1, 50); // Increment but not beyond 20
                     } else if (action === 'minus') {
                         currentLevel = Math.max(currentLevel - 1, 0); // Decrement but not below 0
                     }
             
-                    const cardInfo = cardData.find(item => item.name === cardTitle && item.level === currentLevel);
+                    const cardInfo = priceData.find(item => item.name === cardTitle);
                     if (cardInfo) {
                     	// cardElement.querySelector('.profit-value.placeholder').textContent = cardInfo.profitPerHour;
-                    	cardElement.querySelector('.addl-profit-value.placeholder').textContent = cardInfo.profitPerHourDelta;
-                    	cardElement.querySelector('.upgrade-price-value.placeholder').textContent = cardInfo.price;
-                    	cardElement.querySelector('.price-profit-ratio-value.placeholder').textContent = cardInfo.profitPercentage + '%';
-            
+
+                    	var profitValue = cardInfo.profit * (1.07**currentLevel);
+                    	var priceValue = cardInfo.price * 1.02469507656536 ** (currentLevel**2 + 3*currentLevel);
+                    	cardElement.querySelector('.addl-profit-value.placeholder').textContent = Math.round(profitValue);
+                    	cardElement.querySelector('.upgrade-price-value.placeholder').textContent = Math.round(priceValue);
+                    	cardElement.querySelector('.price-profit-ratio-value.placeholder').textContent = Math.round(profitValue / priceValue * 100 * 10) / 10 + '%';
+            			console.log('cardTitle: ' + profitValue + ' ' + priceValue);
                     	saveLevelToLocalStorage(cardTitle, currentLevel);
             
                     	cardElement.querySelector('.upgrade-item-level span').textContent = `lvl ${currentLevel}`;
@@ -116,12 +128,16 @@
                 } else {
                     // Setting initial level from local storage
                 	currentLevel = getLevelFromLocalStorage(cardTitle);
-                	const cardInfo = cardData.find(item => item.name === cardTitle && item.level === currentLevel);
+                	const cardInfo = priceData.find(item => item.name === cardTitle);
                 	if (cardInfo) {
-                    	// cardElement.querySelector('.profit-value.placeholder').textContent = cardInfo.profitPerHour;
-                    	cardElement.querySelector('.addl-profit-value.placeholder').textContent = cardInfo.profitPerHourDelta;
-                    	cardElement.querySelector('.upgrade-price-value.placeholder').textContent = cardInfo.price;
-                    	cardElement.querySelector('.price-profit-ratio-value.placeholder').textContent = cardInfo.profitPercentage + '%';
+
+                    	var profitValue = cardInfo.profit * (1.07**currentLevel);
+                    	var priceValue = cardInfo.price * 1.02469507656536 ** (currentLevel**2 + 3*currentLevel);
+                    	cardElement.querySelector('.addl-profit-value.placeholder').textContent = Math.round(profitValue);
+                    	cardElement.querySelector('.upgrade-price-value.placeholder').textContent = Math.round(priceValue);
+                    	cardElement.querySelector('.price-profit-ratio-value.placeholder').textContent = Math.round(profitValue / priceValue * 100 * 10) / 10 + '%';
+
+
                 	}
             
                 	cardElement.querySelector('.upgrade-item-level span').textContent = `lvl ${currentLevel}`;
@@ -359,7 +375,7 @@
                                                 </div>
                                             </div>
                                             <div class="upgrade-item-info">
-                                                <div class="upgrade-item-title">IT team</div>
+                                                <div class="upgrade-item-title">IT Team</div>
                                                 <div class="upgrade-item-profit">
                                                     <!--                           <div class="upgrade-buy-stats-info">
                                                         <div class="price">
@@ -1697,7 +1713,7 @@
                                                 </div>
                                             </div>
                                             <div class="upgrade-item-info">
-                                                <div class="upgrade-item-title is-long">Consensus Explorer pass</div>
+                                                <div class="upgrade-item-title is-long">Consensus Explorer Pass</div>
                                                 <div class="upgrade-item-profit">
                                                     <!--                           <div class="upgrade-buy-stats-info">
                                                         <div class="price">
